@@ -6,18 +6,20 @@ try:
 
 	if weekdays == 1:
 		print('This is Monday')
-	if weekdays == 2:
+	elif weekdays == 2:
 		print('This is Tuesday')
-	if weekdays == 3:
+	elif weekdays == 3:
 		print('This is Wednesday')
-	if weekdays == 4:
+	elif weekdays == 4:
 		print('This is Thursday')
-	if weekdays == 5:
+	elif weekdays == 5:
 		print('This is Friday')
-	if weekdays == 6:
+	elif weekdays == 6:
 		print('This is Saturday')
-	if weekdays == 7:
+	elif weekdays == 7:
 		print('This is Sunday')
+	else:
+		raise ValueError
 
 except ValueError:
 	print('The entered value is not correct, please enter a number between 1 and 7')
